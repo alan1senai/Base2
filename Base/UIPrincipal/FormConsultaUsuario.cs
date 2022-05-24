@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-﻿namespace UIPrincipal
-{
-    internal class FormConsultaUsuario
-    {
-    }
-}
-=======
 ﻿using BLL;
 using System;
 using System.Data;
@@ -70,4 +62,3 @@ namespace UIPrincipal
         }
     }
 }
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3

@@ -53,11 +53,7 @@ namespace UIPrincipal
             idLabel.AutoSize = true;
             idLabel.Location = new System.Drawing.Point(36, 59);
             idLabel.Name = "idLabel";
-<<<<<<< HEAD
-            idLabel.Size = new System.Drawing.Size(18, 16);
-=======
             idLabel.Size = new System.Drawing.Size(19, 17);
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3
             idLabel.TabIndex = 8;
             idLabel.Text = "Id";
             // 
@@ -66,11 +62,7 @@ namespace UIPrincipal
             nomeUsuarioLabel.AutoSize = true;
             nomeUsuarioLabel.Location = new System.Drawing.Point(142, 59);
             nomeUsuarioLabel.Name = "nomeUsuarioLabel";
-<<<<<<< HEAD
-            nomeUsuarioLabel.Size = new System.Drawing.Size(91, 16);
-=======
             nomeUsuarioLabel.Size = new System.Drawing.Size(96, 17);
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3
             nomeUsuarioLabel.TabIndex = 0;
             nomeUsuarioLabel.Text = "Nome usuário";
             // 
@@ -79,11 +71,7 @@ namespace UIPrincipal
             senhaLabel.AutoSize = true;
             senhaLabel.Location = new System.Drawing.Point(564, 59);
             senhaLabel.Name = "senhaLabel";
-<<<<<<< HEAD
-            senhaLabel.Size = new System.Drawing.Size(46, 16);
-=======
             senhaLabel.Size = new System.Drawing.Size(49, 17);
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3
             senhaLabel.TabIndex = 2;
             senhaLabel.Text = "Senha";
             // 
@@ -93,11 +81,7 @@ namespace UIPrincipal
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(75, 32);
             this.buttonSalvar.TabIndex = 5;
-<<<<<<< HEAD
-            this.buttonSalvar.Text = "<&Salvar>";
-=======
             this.buttonSalvar.Text = "Sal&var";
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3
             this.buttonSalvar.UseVisualStyleBackColor = true;
             this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
@@ -156,11 +140,7 @@ namespace UIPrincipal
             this.ativoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.usuarioBindingSource, "Ativo", true));
             this.ativoCheckBox.Location = new System.Drawing.Point(735, 83);
             this.ativoCheckBox.Name = "ativoCheckBox";
-<<<<<<< HEAD
-            this.ativoCheckBox.Size = new System.Drawing.Size(59, 20);
-=======
             this.ativoCheckBox.Size = new System.Drawing.Size(61, 21);
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3
             this.ativoCheckBox.TabIndex = 4;
             this.ativoCheckBox.Text = "Ativo";
             this.ativoCheckBox.UseVisualStyleBackColor = true;

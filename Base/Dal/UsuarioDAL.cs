@@ -7,18 +7,12 @@ namespace DAL
 {
     public class UsuarioDAL
     {
-        private object _id;
-        private object cn;
         public Usuario Inserir(Usuario _usuario)
         {
             SqlConnection cn = new SqlConnection();
             try
             {
-<<<<<<< HEAD
-                cn.ConnectionString = @"User ID=SA;Initial Catalog=Loja;Data Source=.;Password=123";
-=======
                 cn.ConnectionString = Conexao.StringDeConexao;
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -62,16 +56,7 @@ namespace DAL
                 cn.Close();
             }
         }
-<<<<<<< HEAD
-        public void Alterar(object usuario)
-        {
-            throw new NotImplementedException();
-        }
         public DataTable Buscar(string _filtro)
-
-=======
-        public DataTable Buscar(string _filtro)
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3
         {
             SqlDataAdapter da = new SqlDataAdapter();
             DataTable dt = new DataTable();
@@ -85,19 +70,6 @@ namespace DAL
                 da.SelectCommand.Connection = cn;
                 da.SelectCommand.CommandText = "SP_BuscarUsuario";
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
-<<<<<<< HEAD
-                SqlParameter pfiltro = new SqlParameter("@filtro", SqlDbType.VarChar);
-                pfiltro.Value = _filtro;
-                da.SelectCommand.Parameters.Add(pfiltro);
-                cn.Open();
-                da.Fill(dt);
-                return dt;
-
-            }
-            catch (SqlException ex)
-            {
-                throw new Exception("Servidor Sql Erro: " + ex.Message);
-=======
 
                 SqlParameter pfiltro = new SqlParameter("@filtro", SqlDbType.VarChar);
                 pfiltro.Value = _filtro;
@@ -110,7 +82,6 @@ namespace DAL
             catch (SqlException ex)
             {
                 throw new Exception("Servidor SQL Erro: " + ex.Message);
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3
             }
             catch (Exception ex)
             {
@@ -121,15 +92,8 @@ namespace DAL
                 cn.Close();
             }
         }
-<<<<<<< HEAD
-
-        public void Excluir(int _id)
-        {
-
-=======
         public Usuario Alterar(Usuario _usuario)
         {
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3
             SqlConnection cn = new SqlConnection();
             try
             {
@@ -137,44 +101,6 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-<<<<<<< HEAD
-                cmd.CommandText = "SP_ExcluirUsuario";
-                SqlParameter pid = new SqlParameter("@Id", SqlDbType.Int);
-                pid.Value = _id;
-                cmd.Parameters.Add(pid);
-                cn.Open();
-                int resultado = cmd.ExecuteNonQuery();
-                if (resultado != 1)
-                    throw new Exception(" Não foi possivel Excluir o usuário: " + _id.ToString());
-            }
-
-            catch (SqlException ex)
-            {
-                throw new Exception(" Servidor SQL Erro: " + ex.Message);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-
-            finally
-            {
-                cn.Close();
-            }
-        }
-
-        public Usuario Alterar(Usuario _usuario)
-        {
-
-            SqlConnection cn = new SqlConnection();
-            try
-            {
-                cn.ConnectionString =Conexao.StringDeConexao;
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = cn;
-                cmd.CommandType = CommandType.StoredProcedure;
-=======
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3
                 cmd.CommandText = "SP_AlterarUsuario";
 
                 SqlParameter pid = new SqlParameter("@Id", SqlDbType.Int);
@@ -192,19 +118,13 @@ namespace DAL
                 SqlParameter pativo = new SqlParameter("@Ativo", SqlDbType.Bit);
                 pativo.Value = _usuario.Ativo;
                 cmd.Parameters.Add(pativo);
-<<<<<<< HEAD
-=======
 
                 cn.Open();
                 cmd.ExecuteNonQuery();
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3
                 return _usuario;
             }
             catch (SqlException ex)
             {
-<<<<<<< HEAD
-                throw new Exception(" Servidor SQL Erro: " + ex.Message);
-=======
                 throw new Exception("Servidor SQL Erro: " + ex.Message);
             }
             catch (Exception ex)
@@ -238,7 +158,6 @@ namespace DAL
             catch (SqlException ex)
             {
                 throw new Exception("Servidor SQL Erro: " + ex.Message);
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3
             }
             catch (Exception ex)
             {
@@ -247,10 +166,6 @@ namespace DAL
             finally
             {
                 cn.Close();
-<<<<<<< HEAD
-
-=======
->>>>>>> b3d02c4ca63dc653997a22b8de78c1bd35634eb3
             }
         }
     }
