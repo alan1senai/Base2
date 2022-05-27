@@ -1,7 +1,7 @@
 ﻿
 namespace UIPrincipal
 {
-    partial class FormPrincipal
+    partial class FormBiblioteca
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace UIPrincipal
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBiblioteca));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,21 +69,24 @@ namespace UIPrincipal
             this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuáriosToolStripMenuItem,
             this.grupoDeUsuáriosToolStripMenuItem});
+            this.cadastroToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             // 
             // usuáriosToolStripMenuItem
             // 
+            this.usuáriosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Highlight;
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.usuáriosToolStripMenuItem.Text = "Usuários";
             this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
             // 
             // grupoDeUsuáriosToolStripMenuItem
             // 
+            this.grupoDeUsuáriosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Highlight;
             this.grupoDeUsuáriosToolStripMenuItem.Name = "grupoDeUsuáriosToolStripMenuItem";
-            this.grupoDeUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.grupoDeUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.grupoDeUsuáriosToolStripMenuItem.Text = "Grupo de usuários";
             // 
             // ajudaToolStripMenuItem
@@ -91,26 +95,30 @@ namespace UIPrincipal
             this.trocarDeUsuárioToolStripMenuItem,
             this.sobreToolStripMenuItem,
             this.sairToolStripMenuItem});
+            this.ajudaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Highlight;
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
             this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.ajudaToolStripMenuItem.Text = "Ajuda";
             // 
             // trocarDeUsuárioToolStripMenuItem
             // 
+            this.trocarDeUsuárioToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Highlight;
             this.trocarDeUsuárioToolStripMenuItem.Name = "trocarDeUsuárioToolStripMenuItem";
-            this.trocarDeUsuárioToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.trocarDeUsuárioToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.trocarDeUsuárioToolStripMenuItem.Text = "Trocar de usuário";
             // 
             // sobreToolStripMenuItem
             // 
+            this.sobreToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Highlight;
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.sobreToolStripMenuItem.Text = "Sobre";
             // 
             // sairToolStripMenuItem
             // 
+            this.sairToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Highlight;
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
             // panel1
@@ -119,10 +127,11 @@ namespace UIPrincipal
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.panel1.Location = new System.Drawing.Point(0, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1287, 100);
+            this.panel1.Size = new System.Drawing.Size(1287, 584);
             this.panel1.TabIndex = 1;
             // 
             // button4
@@ -176,16 +185,15 @@ namespace UIPrincipal
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::UIPrincipal.Properties.Resources.Principal;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 128);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1287, 458);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(2450, 980);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // FormPrincipal
+            // FormBiblioteca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -195,8 +203,8 @@ namespace UIPrincipal
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "FormPrincipal";
-            this.Text = "FormPrincipal";
+            this.Name = "FormBiblioteca";
+            this.Text = "Biblioteca";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

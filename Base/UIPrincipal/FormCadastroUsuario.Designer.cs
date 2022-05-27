@@ -1,7 +1,7 @@
 ﻿
 namespace UIPrincipal
 {
-    partial class FormCadastroUsuario
+    public partial class FormCadastroUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -51,58 +51,67 @@ namespace UIPrincipal
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(36, 59);
+            idLabel.ForeColor = System.Drawing.SystemColors.HighlightText;
+            idLabel.Location = new System.Drawing.Point(69, 59);
             idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 17);
+            idLabel.Size = new System.Drawing.Size(18, 16);
             idLabel.TabIndex = 8;
             idLabel.Text = "Id";
             // 
             // nomeUsuarioLabel
             // 
             nomeUsuarioLabel.AutoSize = true;
-            nomeUsuarioLabel.Location = new System.Drawing.Point(142, 59);
+            nomeUsuarioLabel.ForeColor = System.Drawing.SystemColors.HighlightText;
+            nomeUsuarioLabel.Location = new System.Drawing.Point(290, 60);
             nomeUsuarioLabel.Name = "nomeUsuarioLabel";
-            nomeUsuarioLabel.Size = new System.Drawing.Size(96, 17);
+            nomeUsuarioLabel.Size = new System.Drawing.Size(91, 16);
             nomeUsuarioLabel.TabIndex = 0;
             nomeUsuarioLabel.Text = "Nome usuário";
             // 
             // senhaLabel
             // 
             senhaLabel.AutoSize = true;
-            senhaLabel.Location = new System.Drawing.Point(564, 59);
+            senhaLabel.ForeColor = System.Drawing.SystemColors.HighlightText;
+            senhaLabel.Location = new System.Drawing.Point(627, 59);
             senhaLabel.Name = "senhaLabel";
-            senhaLabel.Size = new System.Drawing.Size(49, 17);
+            senhaLabel.Size = new System.Drawing.Size(46, 16);
             senhaLabel.TabIndex = 2;
             senhaLabel.Text = "Senha";
             // 
             // buttonSalvar
             // 
+            this.buttonSalvar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttonSalvar.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.buttonSalvar.Location = new System.Drawing.Point(12, 406);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(75, 32);
             this.buttonSalvar.TabIndex = 5;
             this.buttonSalvar.Text = "Sal&var";
-            this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.buttonSalvar.UseVisualStyleBackColor = false;
             this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // buttonSalvarECadastrarNovo
             // 
+            this.buttonSalvarECadastrarNovo.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttonSalvarECadastrarNovo.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.buttonSalvarECadastrarNovo.Location = new System.Drawing.Point(93, 406);
             this.buttonSalvarECadastrarNovo.Name = "buttonSalvarECadastrarNovo";
             this.buttonSalvarECadastrarNovo.Size = new System.Drawing.Size(207, 32);
             this.buttonSalvarECadastrarNovo.TabIndex = 6;
             this.buttonSalvarECadastrarNovo.Text = "Salvar e cadastrar um &novo";
-            this.buttonSalvarECadastrarNovo.UseVisualStyleBackColor = true;
+            this.buttonSalvarECadastrarNovo.UseVisualStyleBackColor = false;
             this.buttonSalvarECadastrarNovo.Click += new System.EventHandler(this.buttonSalvarECadastrarNovo_Click);
             // 
             // buttonSair
             // 
+            this.buttonSair.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttonSair.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.buttonSair.Location = new System.Drawing.Point(713, 406);
             this.buttonSair.Name = "buttonSair";
             this.buttonSair.Size = new System.Drawing.Size(75, 32);
             this.buttonSair.TabIndex = 7;
             this.buttonSair.Text = "&Sair";
-            this.buttonSair.UseVisualStyleBackColor = true;
+            this.buttonSair.UseVisualStyleBackColor = false;
             this.buttonSair.Click += new System.EventHandler(this.buttonSair_Click);
             // 
             // usuarioBindingSource
@@ -111,6 +120,7 @@ namespace UIPrincipal
             // 
             // idTextBox
             // 
+            this.idTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "Id", true));
             this.idTextBox.Location = new System.Drawing.Point(39, 79);
             this.idTextBox.Name = "idTextBox";
@@ -119,6 +129,7 @@ namespace UIPrincipal
             // 
             // nomeUsuarioTextBox
             // 
+            this.nomeUsuarioTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.nomeUsuarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "NomeUsuario", true));
             this.nomeUsuarioTextBox.Location = new System.Drawing.Point(145, 79);
             this.nomeUsuarioTextBox.Name = "nomeUsuarioTextBox";
@@ -127,6 +138,7 @@ namespace UIPrincipal
             // 
             // senhaTextBox
             // 
+            this.senhaTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.senhaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "Senha", true));
             this.senhaTextBox.Location = new System.Drawing.Point(567, 79);
             this.senhaTextBox.Name = "senhaTextBox";
@@ -137,29 +149,32 @@ namespace UIPrincipal
             // ativoCheckBox
             // 
             this.ativoCheckBox.AutoSize = true;
+            this.ativoCheckBox.BackColor = System.Drawing.SystemColors.Highlight;
             this.ativoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.usuarioBindingSource, "Ativo", true));
+            this.ativoCheckBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.ativoCheckBox.Location = new System.Drawing.Point(735, 83);
             this.ativoCheckBox.Name = "ativoCheckBox";
-            this.ativoCheckBox.Size = new System.Drawing.Size(61, 21);
+            this.ativoCheckBox.Size = new System.Drawing.Size(59, 20);
             this.ativoCheckBox.TabIndex = 4;
             this.ativoCheckBox.Text = "Ativo";
-            this.ativoCheckBox.UseVisualStyleBackColor = true;
+            this.ativoCheckBox.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(808, 59);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Cadastro de usuários";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormCadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(808, 458);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ativoCheckBox);

@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace UIPrincipal
 {
-    public partial class FormPrincipal : Form
+    public partial class FormBiblioteca : Form
     {
-        public FormPrincipal()
+        public FormBiblioteca()
         {
             InitializeComponent();
         }
